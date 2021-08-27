@@ -10,6 +10,10 @@ namespace FirstCsharp
     {
         static void Main(string[] args)
         {
+            String name;
+            Console.WriteLine("What is your name:");
+            name=Console.ReadLine();  //Taking input from user
+            Console.WriteLine("Hi {0}",name);
             Console.WriteLine("Hi First C# program");
             Console.Write(" Hello World\n");
             int value = 24;
