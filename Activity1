@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hi First C# program");
+            Console.Write(" Hello World\n");
+            int value = 24;
+            Console.WriteLine("The Value is "+value);
+        }
+    }
+}
