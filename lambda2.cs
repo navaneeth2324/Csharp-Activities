@@ -39,6 +39,23 @@ namespace FirstCsharp
             var filtered = li.Where(x => x > 0);
             Console.WriteLine(string.Join(", ", filtered));
 
+
+            //Array of Lambda Expressions
+            var funs = new Func<int, int>[]
+            {
+                x => x * x,
+                x => ++x,
+                x => --x
+            };
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.WriteLine(funs[0](i));
+                Console.WriteLine(funs[1](i));
+                Console.WriteLine(funs[2](i));
+                Console.WriteLine();
+            }
+
         }
 
     }
