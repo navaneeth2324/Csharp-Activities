@@ -30,6 +30,15 @@ namespace FirstCsharp
             var positive = Array.FindAll(vals, x => x > 0);//here the 2nd arguement (Matching condition) is in the form of a lambda expression.
             Console.WriteLine(string.Join(",", positive));
 
+
+            var li = new List<int> { -1, 2, -2, 0, 3, 4, -5 };//using lists and with LINQ methods(select and where) 
+
+            var squared = li.Select(x => x * x);
+            Console.WriteLine(string.Join(", ", squared));
+
+            var filtered = li.Where(x => x > 0);
+            Console.WriteLine(string.Join(", ", filtered));
+
         }
 
     }
