@@ -1,11 +1,19 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
-Func<int, int> square = x => x * x;
-Func<int, int> cube = x => x * x * x;
-Func<int, int> inc = x => x++;
-Func<int, int, int> add = (x, y) => x + y;
+class demo
+{
+    static void Main()
+    {
+        Func<int, int,int > sum = (x, y) => x + y;
+        Func<int, int> square = x => x * x;
+        Func<int, int> cube = x => x * x * x;
+        Func<int, int, int> sub = (x, y) => x - y;
+        Console.WriteLine(square(4));
+        Console.WriteLine(cube(3));
+        Console.WriteLine(sum(3,6));
+        Console.WriteLine(sub(9,3));
 
-Console.WriteLine(square(5));
-Console.WriteLine(cube(5));
-Console.WriteLine(inc(5));
-Console.WriteLine(add(5, 7));
+    }
+}
